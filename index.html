@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Vecta Corp. Mobile</title>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link href="main.css" rel="stylesheet">  
+    <link href="css/styles.css" rel="stylesheet">
+      
+    <!-- JavaScript HTML requirements -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+      <!-- data-role="page" attribute is important to Jquery-Mobile.
+      
+      Must be included in tags that will emcompass or wrap the page.
+      
+      Will notify Jquery-mobile what each tag is being used for-example below is "page" and below that "header"
+      
+      Will allow different views to be made for Jquery-mobile-->
+      
+<!-- First page below -->
+       <section id="homePage" data-role="page">
+           <header data-role="header">
+               <h1>Home</h1>
+           </header>
+           
+           <nav data-role="navbar">
+                  <!-- List shortcut Typing "ul>li*4>a[href="#"]"
+                  will create a "UL" tag with 4 "LI" tags each with an "A" tag with an "Href" of "#" -->
+                   <ul>
+                       <li><a href="#homePage" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+                       <li><a href="#solutionsPage" class="ui-btn ui-icon-shop ui-btn-icon-top">Solutions</a></li>
+                       <li><a href="#contactPage" class="ui-btn ui-icon-mail ui-btn-icon-top">Contact</a></li>
+                       
+                   </ul>
+               </nav>
+           
+           <!-- Once a Jquery-mobile class is added the depricated "data-role" should actually become "data"
+            see article below-->
+           <article role="main" class="ui-content">
+               <p>Welcome<br /><br />
+
+                    With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+                
+                <!-- collapsible set widget below -->
+                <div data-role="collapsible">
+                  <h3>Client Testimonials</h3>
+                      <p>
+                      <p>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</p>
+
+                      <p>Iona Ford<br />
+                          President<br />
+                          Chevy Dealers Association</p>
+
+                      Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.
+
+                      <p>Robin Banks<br />
+                          CEO<br />
+                          Profits Financial, Inc.</p>
+                          </p>
+                </div>
+                
+           </article>
+           <footer data-role="footer" data-position="fixed"><h2>Footer Page Content</h2></footer>
+       </section>
+<!-- END First page below -->
+       
+<!-- Second page below 
+     Will be "hidden" within page when viewing page until "page 2 link" is clicked-->
+      
+       <div id="solutionsPage" data-role="page">
+           <header data-role="header">
+               <h1>Solutions</h1>
+           </header>
+           
+            <nav data-role="navbar">
+                  <!-- List shortcut Typing "ul>li*4>a[href="#"]"
+                  will create a "UL" tag with 4 "LI" tags each with an "A" tag with an "Href" of "#" -->
+                   <ul>
+                       <li><a href="#homePage" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+                       <li><a href="#solutionsPage" class="ui-btn ui-icon-shop ui-btn-icon-top ui-btn-active ui-state-persist">Solutions</a></li>
+                       <li><a href="#contactPage" class="ui-btn ui-icon-mail ui-btn-icon-top">Contact</a></li>
+                       
+                   </ul>
+               </nav>
+
+           <article role="main" class="ui-content">
+               <h1>Vecta Corp Solutions:</h1>
+                   <hr class="display-hr"/>
+                <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+                     
+                     <!-- vProspect list header link section below -->
+                     <a href="#vprospectPage" class="listLink">
+                      <li data-iconpos="right" data-shadow="false" data-corners="false">
+                       <h2>vProspect 2.0
+                       <div class="wrap wrap-size">
+                           Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.
+                       </div>
+                       </h2>
+                     </li>
+                    </a>
+                     <hr class="display-hr"/>
+                  
+                    <!-- vConvert list header link section below -->    
+                    <a href="#vconvertPage" class="listLink">
+                      <li data-iconpos="right" data-shadow="false" data-corners="false">
+                       <h2>vConvert 2.0
+                       <div class="wrap wrap-size">
+                           Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.
+                       </div>
+                       </h2>
+                     </li>
+                    </a>
+                     <hr class="display-hr"/>
+                     
+                 <!-- vRetain list header link section below -->    
+                    <a href="#vretainPage" class="listLink">
+                      <li data-iconpos="right" data-shadow="false" data-corners="false">
+                       <h2>vRetain 1.0
+                       <div class="wrap wrap-size">
+                           Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.
+                       </div>
+                       </h2>
+                     </li>
+                    </a>
+               </ul> 
+                
+           </article>
+           <footer data-role="footer" data-position="fixed"><h6>Vecta Corp &copy;</h6></footer>
+       </div>
+       <!-- END Second page below -->
+       
+       
+       
+       <!-- BEGIN Second page dialogue boxes -->
+       
+       <!-- vProspect dialogue box -->
+       <section id="vprospectPage" data-role="page" data-dialog="true" data-close-btn="right" data-theme="a">
+               <header data-role="header">
+               <h1>vProspect</h1>
+           </header>
+           
+           <div class="ui-content">
+               <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+                     <li>
+                        <div class="wrap"><i>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</i><br /><br />
+                            
+                            <strong>vProspect can help your business:</strong><br /><br />
+                            
+                            Define your target audience and competition.
+                            <hr class="display-hr"/>
+                            Research your competition and your target audience's behavior, needs, technical know-how level, etc.
+                            <hr class="display-hr"/>
+                            Establish a conceptual and visual identity that corresponds to the defined direction of the company.
+                            <hr class="display-hr"/>
+                            Ensure consistency across all media.
+                            <hr class="display-hr"/>
+                            Establish corporate guidelines for cohesiveness of any future developments.
+                            <hr class="display-hr"/>
+                            Define and/or re-defining your service and/or product offerings.
+                            <hr class="display-hr"/>
+                            Define expansion plans and strategies.
+                            <hr class="display-hr"/>
+                            Implement Search Engine Optimization of all Online materials.</div>
+                        </li>
+
+                   </ul>
+        
+           </div>
+           <footer data-role="footer">
+           <h6>Vecta Corp &copy;</h6></footer>
+       </section>
+       
+       <!-- vConvert dialogue box -->
+       <section id="vconvertPage" data-role="page" data-dialog="true" data-close-btn="right" data-theme="a">
+               <header data-role="header">
+               <h1>vConvert</h1>
+           </header>
+           
+           <div class="ui-content">
+               <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+                     <li>
+                         <div class="wrap"><i>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.<br /><br />
+                                 </i>
+                             <strong>vConvert can help your business:</strong><br /><br />
+                             
+                             Build a visual and functional user front end that focuses exclusively on providing an exceptional user experience while conveying company, service and product information.
+                             <hr class="display-hr"/>
+                             Cause the desired emotional response in a user to facilitate conversion to a client.
+                             <hr class="display-hr"/>
+                             Build sites that move beyond merely conveying information. They advertise, motivate, excite and inspire. Users are more likely to remember and recommend your site.
+                             <hr class="display-hr"/>
+                             Research your target audience's behavior, needs, technical know-how and level, etc.
+                             <hr class="display-hr"/>
+                             Develop any applicable back-end programs to facilitate user interaction with the company and offerings on a highly functional level to allow any kind of online transactions and a completely centralized information collection and access point, accessible from any location.
+                             <hr class="display-hr"/>
+                             Create an architecture to display the site content and information in a logical and easy to access manner. Facilitating thereby the desired ease, for the user to find what they are looking for quickly and easily. Allowing the user to focus on the subject at hand rather than searching for information on the site.</div>
+
+                     </li>
+                   </ul>
+        
+           </div>
+           <footer data-role="footer">
+           <h6>Vecta Corp &copy;</h6></footer>
+       </section>
+       
+       <!-- vRetain dialogue box -->
+       <section id="vretainPage" data-role="page" data-dialog="true" data-close-btn="right" data-theme="a">
+               <header data-role="header">
+               <h1>vRetain</h1>
+           </header>
+           
+           <div class="ui-content">
+               <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+                     <li>
+                         <div class="wrap">
+                            <i>dBuild on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</i><br /><br />
+                            <strong>vRetain can help your business:</strong>
+                            <br /><br />
+                            Streamline existing business infrastructures by utilizing technology for automation, information centralization, and information sharing among all business units and departments, as well as efficient prospect &amp; customer tracking and interaction within the company.
+                            <hr class="display-hr"/>
+                            Collect crucial information, data and statistics that allow a company to keep in touch with users in a very customized, highly targeted way.
+                            <hr class="display-hr"/>
+                            Analyze site visitor behavior through traffic analysis, usability studies and interactive polling. Recommending and making site and application adjustments to improve usability and user experience.</div> 
+
+                     </li>
+                   </ul>
+        
+           </div>
+           <footer data-role="footer">
+           <h6>Vecta Corp &copy;</h6></footer>
+       </section>
+       
+<!-- END Second page dialogue boxes -->
+       
+<!-- Third page below 
+     Will be "hidden" within page when viewing page until "page 2 link" is clicked-->
+      
+       <div id="contactPage" data-role="page">
+           <header data-role="header">
+               <h1>Contact</h1>
+           </header>
+           
+            <nav data-role="navbar">
+                  <!-- List shortcut Typing "ul>li*4>a[href="#"]"
+                  will create a "UL" tag with 4 "LI" tags each with an "A" tag with an "Href" of "#" -->
+                   <ul>
+                       <li><a href="#homePage" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+                       <li><a href="#solutionsPage" class="ui-btn ui-icon-shop ui-btn-icon-top">Solutions</a></li>
+                       <li><a href="#contactPage" class="ui-btn ui-icon-mail ui-btn-icon-top  ui-btn-active ui-state-persist">Contact</a></li>
+                       
+                   </ul>
+               </nav>
+
+           <article role="main" class="ui-content">
+               <form method="get" action="" class="">
+                   <label for="basicField">Contact Us:</label>
+                   <input type="text" name="basicField" id="basicField" value=""     placeholder="Enter Name" class="ui-input-text" class=""/>
+               
+                   <label for="userName" class="ui-hidden-accessible">Your Email:</label>
+                   <input type="text" name="userName" id="userName" value=""     placeholder="Your Email" class="ui-input-text"/>
+                   
+                   <label for="userName">Comments:</label>
+                   <input type="text" name="userName" id="userName" value=""     placeholder="Input Here" class="ui-input-text"/>
+                       
+                   <label for="select-choice-0" class="select">Select your interest:</label>
+                       
+                   <select name="select-choice-0" id="select-choice-0" class="label.ui-btn">
+                    <option value="overnight" selected disabled>Select One</option>
+                    <option value="standard">vProspect</option>
+                    <option value="rush">vConvert</option>
+                    <option value="express">vRetain</option>
+                   </select>
+                       
+                       <div class="ui-field-contain">
+                       <button class="label.ui-btn">Submit</button>
+                      </div>
+               </form>
+                
+           </article>
+           <footer data-role="footer" data-position="fixed"><h2>Footer Page 2 Content</h2></footer>
+       </div>
+<!-- END Third page below -->
+        
+</body>
+
+</html>

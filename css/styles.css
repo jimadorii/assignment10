@@ -1,0 +1,29 @@
+.wrap {
+    white-space:normal;
+    background-color: #F7F7F7;
+    padding: 1em;
+    border-radius: .5em;
+    width: 93%;
+    margin: .5em auto;
+    
+}
+.wrap-size {
+    font-size: 1em;
+    font-weight: 400;
+    margin: .25em 0 0 .25em;
+}
+.display-hr {
+    border: 1px solid lightgray;
+    width: 100%;
+    margin: 1em auto 2em auto;
+}
+
+ul a {
+    text-decoration: none;
+}
+ul a li {
+    font-size: .75em;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
